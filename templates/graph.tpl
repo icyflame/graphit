@@ -11,12 +11,16 @@
   <body>
     <div id = 'content'>
       <h3>Graph it, but make sure do not release this to public</h3>
+% if name is None:
+      <br /><br /><br />
+      <h1>Waiting for you pr to replace the fucking highcharts.js</h1>
+% else:
       <div id = 'data'>
-        <form action = '/' method = 'POST'>
+        <form action = '' method = 'POST'>
           <input type = 'text' name = 'data' placeholder = 'Fill in data like: 2, 3,5,10 ...'></input>
         </form>
       </div>
-% if data is not None:
+  % if defined('data') and data is not None:
 <script type="text/javascript">
 var theme = 'gray';
 (function($){ // encapsulate jQuery
@@ -59,7 +63,7 @@ var theme = 'gray';
             },
             series: [
             {
-                name: 'Value',
+                name: 'V',
                 data: [
                 % for v in data:
                     {{v}},
@@ -71,6 +75,7 @@ var theme = 'gray';
     });
 })(jQuery);
 </script>
+  % end
 % end
     <div id = 'container'></div>
     </div>
