@@ -10,10 +10,21 @@
   </head>
   <body>
     <div id = 'content'>
-      <h3>Graph it, but make sure do not release this to public</h3>
+      <h2><a href = '/'>Graph it !</a></h2>
 % if name is None:
-      <br /><br /><br />
-      <h1>Waiting for you pr to replace the fucking highcharts.js</h1>
+      <div id = 'usage'>
+        <h1><strong>BUT</strong></h1>
+        <h1>don't use it on business before your pr to replace highcharts.js</h1>
+          <br />
+          <h4>How to use this?</h4>
+          <ol>
+            <li>open "http://host:port/example"</li>
+            if this page is already existed, you will see a graph
+            <li>input a list of numbers</li>
+            format of numbers is: 201,258,197, 308, 401, 200, 150,280,  176 ......</li>
+            <li>then "http://host:port/example" will be your graph</li>
+          </ol>
+      </div>
 % else:
       <div id = 'data'>
         <form action = '' method = 'POST'>

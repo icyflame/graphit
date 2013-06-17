@@ -12,18 +12,15 @@ def graph(name = None):
     if name is not None:
         if request.method == 'GET':
             if existed(name):
-                print 'here'
                 data = load_data(name)
         elif request.method == 'POST':
-            data = request.forms.get('data', None)
             try:
+                data = request.forms.get('data', None)
                 data = [int(v.strip()) for v in data.split(',')]
+                if data is not None:
+                    if not existed(name):
+                        dump_data(name, data)
             except:
-                return redirect('/' + name)
-            if data is not None:
-                if not existed(name):
-                    dump_data(name, data)
-            else:
                 return redirect('/' + name)
     return template('templates/graph', **locals())
 
