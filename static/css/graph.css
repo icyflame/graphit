@@ -1,0 +1,19 @@
+body {
+    padding-bottom: 0px;
+}
+
+body h3 {
+    text-align: center;
+}
+
+#data {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#data input {
+    width: 95%;
+    background-color: #ccc;
+    color: black;
+}
