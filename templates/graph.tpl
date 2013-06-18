@@ -5,7 +5,7 @@
     <link href="/static/css/bootstrap.css" rel="stylesheet">
     <link href="/static/css/graph.css" rel="stylesheet">
     <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="/static/js/gray.js"></script>
   </head>
   <body>
