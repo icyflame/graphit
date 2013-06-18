@@ -37,7 +37,11 @@
 % else:
       <div id = 'data'>
         <form action = '' method = 'POST'>
+          % if defined('data') and data is not None:
+          <input type = 'text' name = 'data' value = '{{', '.join(str(v) for v in data)}}'></input>
+          % else:
           <input type = 'text' name = 'data' placeholder = 'Fill in data like: 2, 3,5,10 ...'></input>
+          % end
         </form>
       </div>
   % if defined('data') and data is not None:
