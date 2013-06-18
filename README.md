@@ -6,7 +6,7 @@ a graph generating app for ad-hoc like graphing requirements.
 ```bash
 git clone https://github.com/huoxy/graphit.git
 cd graphit
-./graph.py
+./graphit.py
 ```
 
 
