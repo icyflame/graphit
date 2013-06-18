@@ -29,7 +29,7 @@
       <div id = 'names'>
       <br />
       <h3>EXISTED GRAPHS &#187;</h3>
-      % for graph in graphss:
+      % for graph in graphs:
           <li><a href = '/{{graph}}'>{{graph}}</a></li>
       % end
       </div>
