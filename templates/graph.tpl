@@ -102,6 +102,7 @@ var theme = 'gray';
   % end
 % end
     <div id = 'container'></div>
+    <a id = 'forkme' href = 'https://github.com/huoxy/graphit'>fork me</a>
     </div>
   </body>
 </html>
