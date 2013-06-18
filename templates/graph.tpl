@@ -25,6 +25,15 @@
             <li>then "http://host:port/example" will be your graph</li>
           </ol>
       </div>
+    % if names:
+      <div id = 'names'>
+      <br />
+      <h3>EXISTED GRAPHS &#187;</h3>
+      % for name in names:
+          <li><a href = '/{{name}}'>{{name}}</a></li>
+      % end
+      </div>
+    % end
 % else:
       <div id = 'data'>
         <form action = '' method = 'POST'>

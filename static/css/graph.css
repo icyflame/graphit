@@ -31,3 +31,15 @@ body h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+#names {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#names li {
+    float: left;
+    margin-left: 20px;
+}
+

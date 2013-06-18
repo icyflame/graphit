@@ -16,3 +16,7 @@ def dump_data(name, data):
 def load_data(name):
     datafile = os.path.dirname(os.path.realpath(__file__)) + '/data/' + str(name)
     return json.loads(open(datafile).read())
+
+def list_data():
+    datadir = os.path.dirname(os.path.realpath(__file__)) + '/data'
+    return os.listdir(datadir)

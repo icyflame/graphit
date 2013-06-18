@@ -3,12 +3,13 @@
 import os, json
 from bottle import route, template, static_file, request, redirect
 
-from utils import dump_data, load_data, existed
+from utils import dump_data, load_data, existed, list_data
 
 @route('/', method = 'GET')
 @route('/<name:re:\w+>', method = 'GET')
 @route('/<name:re:\w+>', method = 'POST')
 def graph(name = None):
+    names = list_data()
     if name is not None:
         if request.method == 'GET':
             if existed(name):
